@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: beamer.aux
+The style file: amsalpha.bst
+Database file #1: ref.bib
+Warning--to sort, need author or key in scm
+Warning--to sort, need author or key in wiki
+You've used 5 entries,
+            2624 wiz_defined-function locations,
+            584 strings with 5159 characters,
+and the built_in function-call counts, 1961 in all, are:
+= -- 183
+> -- 77
+< -- 1
++ -- 28
+- -- 27
+* -- 146
+:= -- 289
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 29
+chr.to.int$ -- 5
+cite$ -- 9
+duplicate$ -- 89
+empty$ -- 170
+format.name$ -- 30
+if$ -- 418
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 25
+num.names$ -- 9
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 34
+quote$ -- 0
+skip$ -- 75
+stack$ -- 0
+substring$ -- 105
+swap$ -- 18
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 2
+while$ -- 17
+width$ -- 8
+write$ -- 61
+(There were 2 warnings)

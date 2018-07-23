@@ -1,0 +1,391 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{a4wide}
+\usepackage{anysize}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+\usepackage{iitbieortitle}
+\usepackage{dirtytalk}
+\usepackage{array}
+\usepackage{url}
+
+\renewcommand{\baselinestretch}{1.2} %line spacing
+\marginsize{1.2in}{1.2in}{1in}{1in}   %left right top bottom
+%\textwidth 6in
+% Title Page
+
+\begin{document}
+
+\pagenumbering{roman}
+\pagestyle{plain}
+\def\title{Internet of Things in Supply Chain Management}
+\def\what{IE 694: Seminar Report}
+\def\who{Inderjeet Singh (173190001)}
+\def\guide{Prof. Vishnu Narayanan}
+
+\titlpage
+\tableofcontents
+\listoffigures
+
+
+\newpage
+\pagenumbering{arabic}
+
+
+
+
+
+\chapter{Introduction}
+\section{What is Supply Chain Management}
+The definition of Supply Chain Management is 
+\say{{\bfseries
+Supply Chain Management(SCM) is collection of all the activities, which involves in planning, controlling and executing a product's flow, in the processes of acquiring raw material, production, transportation and distribution to final customers, in the most streamlined and cost effective way possible}}\cite{scm}
+\\ So basically SCM insures the smooth flow of services and products keeping losses and costs (in terms of time, capital, labour etc.) to minimum, providing maximum possible profit to an organization by achieving maximum customer satisfaction. SCM is peak of practices which can provide maximum possible efficiency to an organization.
+
+
+\section{Functions and Benefits of SCM}
+\begin{itemize}
+    \item Demand planing.
+    \item Sourcing and storage.
+    \item To create efficiencies.
+    \item To raise maximum possible profits.
+    \item To lower the losses in system.
+    \item To boost Inter and Intra system collaborations.
+    \item To better transportation or logistics.
+    \item To ensure right amount of inventories of the products.
+    \item To ensure efficient use of available resources.
+    \item To meet customer demand in most effective way possible etc.
+\end{itemize}
+
+
+\section{Role of internet in supply chain management}
+As we know internet serves as a medium of information and data transfer between multiple computing devices capable of connecting with internet. This data transfer is lightening fast through internet.\\
+Development of the supply chain over the years have been slow. We know that main components of supply chain are transportation, warehousing, finished goods inventory, material handling, packaging, customer service, purchasing and raw material inventory.\\
+In current SCM systems, biggest issue is \textbf{inaccuracy and lag in information flow} between different components of SCM, which further results in \say{bullwhip effect} causing huge capital and resource losses which creates instability for a system in market.\\
+For an efficient supply chain management system, most important thing is speed of information flow between different components of SCM for taking prompt and more effective decisions in very stiff competent environment.\\
+So the internet serves the purpose of lightening fast information flow in different components of SCM which helps in timely and effective decision making and reducing so called \say{Bullwhip effect} in supply chain management. In SCM using internet, computing devices including \say{things} are placed at every component of SCM for data generation, processing and information flow using internet.\cite{lancioni2000role}
+%\newpage
+\section{What is Bullwhip Effect}
+\begin{figure}[h]
+\centering
+\includegraphics[width=11cm]{bullwhip}
+\caption{Schematic diagram of bullwhip effect.}{Source : Internet}
+\label{figure-1}
+\end{figure}
+
+
+
+\say{Bullwhip effect} is a phenomenon in SCM which refers to increasing swings in inventory in response to shift in customer demand which moves further up in supply chain. It is also sometime called as \say{forrester effect} as it was first appeared in Jay forrester's {\itshape{Industrial dynamics}.}\\
+To interpret it, we will take an example as -\\
+ let say a retailer reduces the price of a product for a limited period of time, then customer will try to buy that product in excess, which causes sudden increase in demand of that product for that limited period of time, retailer very soon reaches to out-of-stock level, so the retailer places bigger order to distributor in anticipation of larger demand, the distributor further places larger order to manufacturer keeping in mind the safety stock constraint, then manufacturer will place even bigger order to supplier,so the distributor, manufacturer and suppliers are thinking that average demand is increased for that product but average demand is still same, now due to the information lag in the system, retailer will not be able to receive order within desired time, also once the special offer ends then demand of that particular product become very low, which causes retailer to cancel the further orders of that product up in the supply chain due to limited inventory, which results in sudden increase in inventory level in the supply chain.So initially the system wa in this way \say{bullwhip effect} causes instability in supply chain and its main cause is information lag.
+
+\chapter{What is Internet Of Things (IOT)}
+The phrase \say{Internet Of Things} refers to addition of physical things in the system which can generate data as per their intended function for internet.\\
+Internet of Things can be interpreted as 
+\say{A network of devices such as computing devices, mechanical machines, digital devices, objects and even animals and humans provided with a unique identification, all these devices are then connected through the internet which allows the transfer and processing of the data generated by the \say{things} in the system which can be further used for some useful purpose.}\\
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm, height=5.5cm]{IOT}
+\caption{Internet of Things}{Source: Internet}
+\label{figure-2}
+\end{figure}
+The so called \say{thing} in IOT can be anything with some sensors, which can record data as per its function. The thing can be person with a heart monitor implanted, a farm animal with a biochip transponder, an automobile that has built-in sensors to alert the driver when tire pressure is low -- or any other natural or man-made object that can be assigned an IP address and provided with the ability to transfer data over a network.Then this generated data from things is transferred to other computing devices using internet for further processing.
+\section{IOT vs Industry 4.0}
+Mostly we see that the terms Internet of things and Industry 4.0 are used interchangeably. But even though using similar technologies and applications, both terms have different origin and meanings.
+
+\begin{center}
+\begin{tabular}{ | m{1cm} | m{15em} | m{15em} | } 
+ \hline
+ Sr. No. & Internet of Things & Industry 4.0 \\
+ \hline 
+ 1.& IoT was first coined by Kevin Ashton in 1999 & Industry 4.0 was introduced in 2011 as a German government initiative dedicated to ensured competitiveness for the manufacturing industry.  \\ 
+ \hline
+ 2. &  Industrial Internet Consortium (IIC), which was formed in 2014 with the support of GE, ATT, Cisco, Intel and IBM is the one of the prominent non-profit organisation. & Industry 4.0 is as stated earlier is German government initiative.  \\ 
+ \hline
+ 3. & IIC has the business-oriented approach.The consortium has nearly 200 members, which are mostly private companies and some academic institutions in 12 different countries including India, China and Germany. & Industry 4.0 is Manufacturing-oriented approach.Industry 4.0’s main actors are primarily institutional.\\
+ \hline
+ 4. & The IIC aims to provide resources, ideas, pilot projects, and activities about IoT and IIoT technologies—as well as the security of those technologies, enabling and accelerating the adoption of Internet-connected technologies across industries, both manufacturing and non-manufacturing. & Industry 4.0 is focused specifically on the manufacturing industry and the goal of ensuring its competitiveness in a highly dynamic global market.\\
+ \hline
+\end{tabular}
+\end{center}
+Clearly the players involved are very different although in similar looking technological environment. Any initiative to promote the standardization of technologies and practices,as does Industry 4.0 is actually laudable and useful, but it is likely to be less effective in the long term because it is destined to chase a world that is changing faster than can be regulated.\cite{is}
+\chapter{Architecture of IoT}
+Different architectures of IOT have been proposed by different researchers. Some of them are as follows-
+\begin{figure}[h]
+\centering
+\includegraphics[width=12cm, height=6cm]{Picture1}
+\caption{Three layer architecture}
+\label{figure-3}
+\end{figure}
+\section{Three layer architecture}
+This is the most basic architecture of Internet of things which is proposed during early stages of research in this area. It contains three layers, namely,perception, network and application layers. This architecture on provide basic idea of IOT, but it is not sufficient for research purpose.
+\subsection{Perception layer}
+This is a physical layer. It has sensors for sensing and collecting information and data about the environment. It collects and provide data for some physical parameters in the system. It can also be used for identification of some objects in the environment.
+\subsection{Network layer}
+This layer provide connection between other smart things, network devices and servers. This layer is also responsible for transmission and processing of data collected by the things in the system.
+\subsection{Application layer}
+This layer delivers application specific service to the user. Its applications includes smart homes, smart cities, smart health etc.
+
+\section{Five layer architecture}
+This architecture contains perception, transport, processing, application, and business layers.
+\begin{figure}[h]
+\centering
+\includegraphics[width=12cm, height=6cm]{Picture2}
+\caption{Five layer architecture}
+\label{figure-4}
+\end{figure}
+\subsection{Transport layer}
+This layer transfer the sensor data from perception layer to processing layer and vice versa using networks like RFID, LAN, mobile networks, NFC, wireless etc.
+\subsection{Processing layer (Middleware layer)}
+ This layer stores, analyzes, and processes huge amounts of data that comes from the transport layer. It employs technologies like big data processing module, cloud computing, database etc.
+ \subsection{Business layer}
+ This layer manages the entire IOT system. It also manages business and profit models, users privacy etc.\\
+The role of the perception and application layers is the same as the architecture with three layers
+\section{Major components of Internet of Things}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm, height=5cm]{Components}
+\caption{Components of IoT}{Source: Internet}
+\label{figure-5}
+\end{figure}
+\subsection{ID}
+This component assign a unique id to an object based on parameters such as IPv6 ID, MAC ID, EPC, Universal product code, bar codes and some other custom methods.
+\subsection{Security controls}
+This component allows owner of a device to place restriction on kind of devices can connect to it.
+\subsection{Relationship management}
+This module stores the type of devices that a given device should try to connect with, and also to manage relationships with other devices.
+\subsection{Service discovery}
+These modules have dedicated directories that store details of devices providing certain kinds of services like cloud service.
+\subsection{Meta-information}
+Meta information describes form, operation and some other information along with ID about the device.
+\subsection{Service composition}
+This component is responsible for providing better integrated services to users. 
+
+
+\chapter{Internet of Things in Supply Chain information transmission based on RFID}
+Now we will study supply chain information transmission based on internet of things and RFID(Radio Frequency Identification)-
+
+
+\section{Problems of information transmission in Supply Chain}
+Rate and accuracy of information flow in a supply chain plays a great role in efficiency of supply chain management system. If there is information lag, then manufacturers can't do reasonable decision making such as amount of products to be manufactured for every batch. For distributors, they also need real-time information for decision making on how much inventory to keep in anticipation of future demand, For suppliers, they will not be able to supply right amount of raw material as required by manufacturer etc. \par
+As we know Information lag in supply chain results in \say{Bullwhip effect}, which makes a supply chain very unstable and causes huge capital and product losses.\\
+Here are the few cases in which information transmission plays very important role-
+\begin{enumerate}
+	\item Demand Forecast.
+    \item Price fluctuations.
+    \item Limited supply and short term games.
+\end{enumerate}
+\subsection{Demand Forecast}
+\par Demand forecast is very important in a supply chain for arranging production processes, planing output, for controlling inventory more reasonably etc. But due to information asymmetry in supply chain, upstream enterprises can't get real demand information. In many cases change of retailers' order doesn't represent the real customer demand, which leads to false decision making in upstream supply chain.\par
+So for accurate demand forecast, it is very important to master final customers' real demand which is very desirable for an efficient supply chain.
+
+\subsection{Price fluctuations}
+In many cases Distributors and manufactures,to promote customers for increasing advance purchase, used some promotional methods like providing huge price discount or quantity discount on their some specific products. The reason behind this may not always to enhance advance purchase of customer actually it may be done by some retailers to wipe out the old inventory of some perishable products. So this phenomena will lead to advance purchase by customers downstream.\par
+This increased purchase by downstream customers doesn't represent the actual customer demand, though demand is still same as before. This will finally results in \say{Bullwhip Effect}.
+
+\subsection{Limited supply and short term games}
+In limited supply and short term gaming, products are supplied for short term by suppliers in limited supply like flash sales of mobiles on e-commerce sites now a days. This will cause excessive reactions from customer as everyone try to buy that particular product as soon as possible because of he is having the sense of limited supply of that particular product.\par
+So this increased purchase due to short term gaming doesn't represent the real demand because as the situation is alleviated, orders will decrease suddenly. As a result, it will become impossible for suppliers to distinguish the real increased demand and the inflated phenomenon due to short term game.
+
+
+\section{What is RFID System?}
+RFID system acts as information entrance for internet of things in a system. RFID is a non-contact automatic identification named "Radio frequency identification", which is capable of identifying still or moving objects automatically.
+
+\section{Different parts of RFID system}
+RFID system mainly have three parts, they are as follows-\\
+\begin{itemize}
+    \item RFID Tags.
+    \item Reader.
+    \item Antenna.
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=11cm,height=7cm]{rfid}
+\caption{Structure of RFID system.\cite{yan2009supply}}
+\label{figure-6}
+\end{figure}
+
+\section{RFID Tags}
+RFID tags are used to provide  unique identification to an object.\\
+They are mainly composed of coupling units and chips. Each tag has an \say{Electronic Product Code} also called \say{EPC}.
+They uses electromagnetic fields to automatically identify and track tags attached to a particular object.\\Unlike a barcode, the tag need not be within the line of sight of the reader, so it may be embedded in the tracked object.\\
+There are mainly two types of tags:
+\begin{itemize}
+    \item Passive tags
+    \item Active tags
+\end{itemize}
+\subsection{Passive tags}
+They collect energy from a nearby RFID reader's interrogating radio waves.
+\subsection{Active tags}
+They have battery like local power source unlike passive tags, and can operate at very far distances from RFID reader.
+
+\section{Reader}
+Reader is used to read the data stored in tags and also to write new data to tags. According to different applications, reader can be designed in following types- 
+\begin{itemize}
+    \item Hand-held type.
+    \item Fixed type.
+\end{itemize}
+
+\section{Antenna}
+Antenna is used to transmit radio-frequency signals between readers and tags.
+\section{Working of RFID system}
+\begin{itemize}
+    \item When an object with a tag installed in it, enters the magnetic field of the reader, Then the product receives Radio-frequency signals from the reader.
+    \item Then tags transmits the data stored in them to the reader actively or using faradic energy from the reader(i.e. passively).
+    \item Then reader will transmit the data to background information system for further processing.
+\end{itemize}
+\section{EPC network system}
+The main purpose of EPC network system is to transmit product information effectively.The EPC Network manages dynamic information that is specific to individual objects. This includes data regarding the movement of an object throughout the product life cycle. \par The operation of EPC network is depends on \textbf{integration of network application system and RFID system}. Using EPC network system, supply chain members can query, update and exchange information. \\Basic structure of EPC network system have following-
+\begin{itemize}
+    \item Electronic Product code.
+    \item Tags and reader.
+    \item EPC middleware.
+    \item EPC Information service (EPC-IS).
+    \item Object Naming Service (ONS).
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=11cm,height=7cm]{EPC}			%-------------------------------------------
+\caption{EPC Network System.\cite{yan2009supply}}
+\label{figure-7}
+\end{figure}
+\subsection{Electronic Product Code}
+Electronic Product Code (EPC) are designed to be stored on an RFID tag.EPC is a \textbf{unique number} that identifies a specific item in a supply chain on which it is installed. \par EPC, in our case have all the product information stored in it, like point of origin, production date,viable life, name of manufacturer etc.
+\subsection{EPC Middleware}
+EPC middleware is program module or a service with a series of specific attributes. These attributes are integrated by users to meet their specific needs. EPC Middleware was formerly called as \say{Savant}. Most important part of EPC Middleware is ALE (Application Level Events).
+\subsubsection{Application Level Events (ALE) :}
+ALE acts as interface through which clients can obtain filtered and consolidated data.
+\subsection{EPC Information Service (EPC-IS)}
+EPC Information Service has following two main functions-
+\begin{enumerate}
+    \item Storing the information processed by EPC Middleware.
+    \item Quering related information which includes both internal information on own EPC-IS servers and external information on other supply chain member' EPC-IS servers through EPC network system.
+\end{enumerate}
+
+\subsection{Object Naming Services (ONS)}
+Object Naming Services (ONS) similar to the Domain Name Servers (DNS) is a network service system which is used in the internet to translate names into IP addresses. \par The main function of ONS is to pointing out specific EPC-IS server where information being queried is stored for EPC middleware.\cite{wiki}
+
+\section{Working of Internet of Things in Supply Chain Information Transmission}
+Internet of things in supply chain overcome the disadvantages of traditional vertical information transmission in supply chain which were the main cause of information lag and inaccurate information transmission.\par
+Internet of Things provides real time information about the products in supply chain from downstream to upstream solving the problem of information lag. 
+\subsection{EPCglobal Network}
+EPCglobal Network is current management organization of internet of things. Duty of EPCglobal network is to develop and manage EPC standards. Every enterprise must be registered user of EPCglobal in order to apply Internet of Things in the enterprise.\\
+
+
+\par  \textbf{Prosedure for applying IOT} in supply chain is as follows-
+\begin{itemize}
+    \item After registration at EPCglobal network, Supply chain members configure their internal internet of things equipments.
+    \item For RFID systems, information coding rules in tags must adopt the standard developed by EPCglobal.
+    \item RFID systems, EPC middlewares and EPC-IS are core technologies in this system.
+    \item EPC middleware can be independently developed and compatibility between EPC middleware and background information system must be considered.
+    \item Since Large amount of EPC related information is stored in EPC-IS databases, also application servers provide services for business. So With the services of local ONS (or Root ONS), supply chain members can get and update the product information in time.
+    
+\end{itemize}
+
+\subsection{Role of Internet of Things for Manufacturers}
+\begin{itemize}
+    \item Manufacturers identifies their product with unique EPC codes using IoT.
+    \item Manufacturers can query real time sale status of their products.
+    \item They can make production plans more reasonably.
+    \item The reliance of manufacturers on the orders of distributors become less because entire supply chain network become visible to them using IoT.
+\end{itemize}
+So this new information transmission system allows information enlargement in the supply chain.
+\subsection{Role of Internet of Things for distributors}
+\begin{itemize}
+    \item They can better control inventory and trace the flow of products.
+    \item They no longer need short term gaming.
+    \item They can make procurement plan more reasonably through querying product information of manufacturers.
+\end{itemize}
+
+\section{Benefits of Internet of Things in Supply Chain management}
+The major benfits are as follows-
+\begin{itemize}
+    \item Internet of Things realize information visualization in a supply chain.
+    \item It improves the level of information sharing among supply chain members.
+    \item Entire supply chain performance improves considerably using IoT.
+    \item IoT of things helps decision making in supply chain.
+    \item With the use of IoT in supply chain \say{Vendor relations} and \say{Customer retention} are enhanced.
+    \item IoT using smart sensors can reduce the cost of machine downtime by planned and predictive maintenance. 
+    \item It protects supply chain from bullwhip effect.
+    \item over the IoT Ubiquitous information, allows companies to use the IoT for capturing the real-time state of the material to be purchase.
+    \item Data collected using IoT is high quality. (US Businesses losses more then 600 billion dollars a year from problem with data quality).
+    \item Data insights are gained with spectrum of value.
+    \item IoT can be used for obtaining information about the state and location of products during the process of transporting.
+    \item Visual inventory management allows the dynamic information about the inventory to be collected automatically over the IoT.
+    \item Customers can understand the process of fabricating and transporting over the IoT.
+    \item Companies can use the IoT for optimizing and monitoring the process of production real timely.
+    \item Aside from serving a manufacturer's initial purpose of monitoring the wear and tear of machines, IoT sensors can also provide insight on how those machines manufacture products, enabling the manufacturer to inform a client if its particular product needs to be redesigned so it can be made more efficiently.\cite{lou2011agile}
+\end{itemize}
+
+
+\chapter{Application of internet of things in Drug Supply Chain information transmission}
+Drug industry is very sensitive field regarding social health. Since the number of crimes on drugs has increased greatly in recent time. It causes significant loss of social health, human lives, capital losses to government and enterprises.\par
+So new technologies are required to realize visual management of drugs. IoT makes it possible for drug supply chain organizations.
+
+\section{Working of Internet of Things in drug supply chain}
+Internet of Things in Drug supply chain works in following manner-
+\begin{figure}[h]
+\centering
+\includegraphics[width=11cm,height=7cm]{drug}			%-------------------------------------------
+\caption{IoT in drug supply chain.\cite{yan2009supply}}
+\label{figure-8}
+\end{figure}
+
+\begin{itemize}
+    \item RFID Tags with EPC are attached to the drugs in supply chain.
+    \item Drug related informations such as production date, production place, name of manufacturer, place of manufacturing, type, weight, production batches, guarantee period etc. are stored in Tags or EPC-IS database.
+    \item Now drugs can be identified using EPC codes.
+    \item Enterprises can query and update drug information taking EPC codes as keywords.
+    \item This drug information in supply chain can be transmitted to different members of supply chain using Internet.
+    \item Now drug querying terminals are equipped at hospitals or at medical stores as client terminals for customers to query drug information.
+    \item RFID readers and ALE servers are equipped in these terminals.
+    \item As drug with RFID tags passed through drug querying terminal, EPC information will be automatically read and processed.
+    \item Then Drug information is queried with local ONS and root ONS.
+    \item At the last, as per returned inforamation, customer can make their decision about a drug that which drug he/she should buy.
+    
+    
+    
+\end{itemize}
+
+The biggest advantage of Internet of Things in Drug supply chain is that customers have extra safety from buying duplicate or expired drugs, while manufacturer can accurately recall poor quality drugs.
+
+\chapter{Conclusions}
+So we can draw following conclusion from the study of Internet of Things in Supply Chain Management - 
+\begin{itemize}
+	\item Use of Internet of Things in Supply Chain makes information transfer fast, reliable and much more smoother.
+	\item IoT enhances transparency in supply chain.
+	\item IoT increases operational efficiencies and revenue opportunities for an organisation.
+	\item Using IoT live tracking of products in supply chain is possible.
+	\item Data generated from IoT is clean and precise, which can be further used for predictive analysis for inventory forecasting, demand forecasting etc.
+	\item IoT offers \say{Perpetual connectivity}.
+	\item IoT generates and process data real timely.
+	\item Data collected from IoT in supply chain can also be used for building new models.
+\end{itemize}
+So we can say that IoT has the potential of transforming entire supply chain environment. But to popularize IoT in supply chain more incentive measures to the enterprises for applying internet of things must be provided.\cite{yan2009supply}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{amsplain}
+\bibliography{ref}
+
+\end{document}          

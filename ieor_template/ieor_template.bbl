@@ -1,0 +1,39 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{wiki}
+\emph{{EPCglobal Network}},
+  \url{https://en.wikipedia.org/wiki/EPCglobal_Network}.
+
+\bibitem{is}
+\emph{{Industry 4.0 or Industrial Internet of Things—What’s Your
+  Preference?}},
+  \url{https://www.automationworld.com/industry-40-or-industrial-internet-things-whats-your-preference}.
+
+\bibitem{scm}
+\emph{{supply chain management (SCM)}},
+  \url{https://searcherp.techtarget.com/definition/supply-chain-management-SCM}.
+
+\bibitem{lancioni2000role}
+Richard~A Lancioni, Michael~F Smith, and Terence~A Oliva, \emph{The role of the
+  internet in supply chain management}, Industrial Marketing Management
+  \textbf{29} (2000), no.~1, 45--56.
+
+\bibitem{lou2011agile}
+Ping Lou, Quan Liu, Zude Zhou, and Huaiqing Wang, \emph{Agile supply chain
+  management over the internet of things}, Management and Service Science
+  (MASS), 2011 International Conference on, IEEE, 2011, pp.~1--4.
+
+\bibitem{yan2009supply}
+Bo~Yan and Guangwen Huang, \emph{Supply chain information transmission based on
+  rfid and internet of things}, Computing, Communication, Control, and
+  Management, 2009. CCCM 2009. ISECS International Colloquium on, vol.~4, IEEE,
+  2009, pp.~166--169.
+
+\end{thebibliography}
